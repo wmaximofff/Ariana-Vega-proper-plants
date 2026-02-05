@@ -3,6 +3,7 @@ export default function CartItems({ cart, onUpdateQuantity }) {
 
   return (
   <div>  
+    <div className="cart">
     <h2>Cart</h2>
     <ol>
       {cart.map((item) => (
@@ -13,9 +14,10 @@ export default function CartItems({ cart, onUpdateQuantity }) {
         <button onClick={() => onUpdateQuantity(item.id, -1)}>-</button>
 
         {item.quantity}
-      </li>
-      ))}
-    </ol>
+        </li>
+        ))}
+      </ol>
+    </div>
   </div>
 );
 }
