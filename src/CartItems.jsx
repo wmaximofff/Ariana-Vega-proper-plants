@@ -1,5 +1,6 @@
 export default function CartItems({ cart, onUpdateQuantity }) { 
 
+// need the two buttons for increase and decrease
 
   return (
   <div>  

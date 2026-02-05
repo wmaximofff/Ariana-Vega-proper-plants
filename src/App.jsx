@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { PLANTS } from './data'
-import PlantItems from './PlantItems'
+import PlantItems from './PlantItems' //no brackets because it has export default on their jsx files
 import CartItems from './CartItems'
 
-//function has to live here because setCart is stored here and it needs to be in the same place that the Cart state lives
+//the below function has to live here because setCart is stored here and it needs to be in the same place that the Cart state lives
+//if quantity of cart is 0 then it is removed from the cart
 
 export default function App() {
   const [cart, setCart] = useState([]);
