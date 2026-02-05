@@ -37,6 +37,17 @@ button:hover {
   cursor: pointer;
 }
 
+.cart {
+  display: grid;
+  padding: .30rem;
+  gap: .30rem;
+}
+
+.cart-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 @media (width >= 500px) {
   main {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

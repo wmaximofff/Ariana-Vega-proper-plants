@@ -10,14 +10,17 @@ export default function CartItems({ cart, onUpdateQuantity }) {
         <li 
         key={item.id}>
         {item.image} {item.name}
+        <div className="cart-buttons">
         <button onClick={() => onUpdateQuantity(item.id, +1)}>+</button>
         <button onClick={() => onUpdateQuantity(item.id, -1)}>-</button>
 
         {item.quantity}
-        </li>
+  </div>        
+  </li>
         ))}
       </ol>
     </div>
   </div>
+
 );
 }
