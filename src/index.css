@@ -1,0 +1,38 @@
+*{ 
+  margin: 0; 
+  padding: 0; 
+  box-sizing:border-box 
+}
+
+body {
+  background: white;
+  padding: 1rem; 
+
+}
+
+main { 
+  display:grid;
+  grid-template-columns: 1fr 30ch; 
+}
+
+.plants li { 
+  border: 1px solid grey; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  font-size: 2.5rem;
+}
+
+button {
+  padding: .5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@media (width >= 500px) {
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}

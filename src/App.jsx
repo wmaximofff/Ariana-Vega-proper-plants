@@ -30,9 +30,9 @@ export default function App() {
 
 
   return (
-  <div>
+  <main>
       <PlantItems plants={PLANTS} onAddToCart={updateQuantity} />
       <CartItems cart={cart} onUpdateQuantity={updateQuantity} />
-    </div>
+    </main>
   );
 }
