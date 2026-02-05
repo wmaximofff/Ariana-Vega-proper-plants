@@ -15,16 +15,22 @@ main {
   grid-template-columns: 1fr 30ch; 
 }
 
-.plants li { 
-  border: 1px solid grey; 
+.plants ol { 
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   list-style: none;
   font-size: 2.5rem;
 }
 
+.plants li {
+  border: 1px solid grey; 
+  padding: 1rem;
+}
 button {
   padding: .5rem;
+  place-items: center;
+
 }
 
 button:hover {
